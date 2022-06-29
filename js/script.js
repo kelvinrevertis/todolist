@@ -29,6 +29,8 @@ function addTask() {
         //removeBtn.setAttribute("style","display:block")
 
         item.appendChild(removeBtn)
+
+        document.getElementById('task').value=""
     }
 }
 
