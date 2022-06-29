@@ -12,13 +12,27 @@ function addTask() {
         let check = document.createElement('input')
         check.type = "checkbox"
 
-        item.appendChild(check)
+        let text = document.createElement('label')
+        text.appendChild(document.createTextNode(task))
 
-        item.appendChild(document.createTextNode(task))
+        item.appendChild(check)
+        item.appendChild(text)
 
         document.getElementById("task-list").appendChild(item)
+        let removeBtn = document.createElement("button")
+        removeBtn.setAttribute("onClick", "removeTask(this)")
+        removeBtn.setAttribute("class", "fa fa-trash")
+        removeBtn.setAttribute("id","test-check")
 
+        item.appendChild(removeBtn)
     }
+}
+
+function removeTask(button) {
+
+    let itemDel = button.parentNode
+
+    document.getElementById("task-list").removeChild(itemDel)
 }
 
 /*function addTask(){
