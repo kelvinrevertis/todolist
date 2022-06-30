@@ -4,7 +4,7 @@ List of itens or task to add, mark or remove. Using HTML CSS and JS.
 # Funcionality
 At this system you can add your task or "itens" writing in space "Digite sua tarefa", and click in "+" button.
 
-<img src="img/Captura de tela 2022-06-30 201026.png>
+<img src="img/Captura de tela 2022-06-30 201026.png">
 
 And you can mark if you did this task, or click in "trash can" icon to delete it.
 
