@@ -1,28 +1,24 @@
-function addTask() {
-    if (document.getElementById('task').value == "") {
-        alert("Erro: lista vazia")
-    } else {
-        let task = document.getElementById('task').value
+const tasks = document.getElementById('task')
+const list = document.getElementById('task-list')
+console.log(list)
+console.log("teste")
 
-        let removeBtn = document.createElement("button")
-        removeBtn.setAttribute("onClick", "removeTask(this)")
-        removeBtn.setAttribute("class", "fa fa-trash")
+const tasksList = [
+    {id:1,name:'Teste'},
+    {id:2,name:'Nova Tarefa'},
+    {id:3,name:'Compras'},
+    {id:4,name:'Caminhada'},
+]
 
-        const item = document.createElement('li')
-        item.innerHTML = `
-            <input type="checkbox">
-            <label>${task}</label>
-            `
-
-        item.appendChild(removeBtn)
-
-        document.getElementById('task-list').appendChild(item)
-    }
-    document.getElementById('task').value = ""
+const addTask = tasks =>{
+    const li = document.createElement('li')
+    li.innerHTML= `
+    <input type="checkbox">${tasks.name}
+    <button>X</button>`
+    
+    list.prepend(li)
 }
 
-function removeTask(button) {
-    let itemDel = button.parentNode
-
-    document.getElementById("task-list").removeChild(itemDel)
+const showList =()=>{
+    
 }
