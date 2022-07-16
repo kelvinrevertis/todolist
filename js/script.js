@@ -1,7 +1,5 @@
 const tasks = document.getElementById('task')
 const list = document.getElementById('task-list')
-console.log(list)
-console.log("teste")
 
 const tasksList = [
     {id:1,name:'Teste'},
@@ -20,5 +18,9 @@ const addTask = tasks =>{
 }
 
 const showList =()=>{
-    
+
+    tasksList.forEach(addTask)
+
 }
+
+showList()
