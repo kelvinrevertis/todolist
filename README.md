@@ -10,4 +10,4 @@ And you can mark if you did this task, or click in "trash can" icon to delete it
 
 <img src="img/Captura de tela 2022-06-30 201059.png">
 
-Unfortunality this system can't save your "to-do" list in browser...yet.
+Now test this system in link: https://kelvinrevertis.github.io/todolist/
